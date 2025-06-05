@@ -160,6 +160,7 @@ docker compose down
 
    ```bash
    cd ./prometheus-lab/PrometheusLab
+ ```
 ````
 
 2. Запустіть контейнери:
