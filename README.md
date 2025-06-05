@@ -139,15 +139,11 @@ lab7-event-architecture/
 docker compose down
 ```
 
-
-   docker compose down
-   ```
-
    > Це безпечно завершить роботу всіх компонентів (Elasticsearch, Fluentd, Kibana) і видалить контейнери, зберігаючи при цьому дані у volume-ах.
 
 ---
 
-````markdown
+
 # 📡 Моніторинг із Prometheus + Grafana + Telegram Bot
 
 Цей репозиторій демонструє, як запустити моніторинг системи за допомогою **Prometheus**, **Grafana** та **Telegram-бота**, який видає метрики на `/metrics`.
@@ -160,14 +156,14 @@ docker compose down
 
    ```bash
    cd ./prometheus-lab/PrometheusLab
- ```
+  ```
 ````
 
 2. Запустіть контейнери:
 
    ```bash
    docker compose up
-   
+   ```
 
 3. Переконайтесь, що сервіси доступні:
 
@@ -182,27 +178,27 @@ docker compose down
 
    
 Bash
-
+   ```bash
    cd ./telegram_bot
-   
+   ```
 
 2. Якщо ще немає віртуального середовища, створіть і активуйте його:
 
    
 Bash
-
+   ```bash
    python -m venv venv
    source venv/Scripts/activate  # або source venv/bin/activate на Linux/macOS
    pip install -r requirements.txt
-   
+   ```
 
 3. Запустіть бота:
 
    
 Bash
-
+   ```bash
    python bot.py
-   
+   ```
 
 4. Перевірте метрики:
 
